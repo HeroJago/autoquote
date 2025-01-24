@@ -32,6 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['quote'])) {
     <h1><?= $spr ?></h1>
 
     <h3><?= $quote ?></h3>
-    <img src="wangsaf.PNG" alt="Foto Duit">
+    <img src="wangsaf.PNG" alt="Quote Logo">
 </body>
 </html>
