@@ -9,9 +9,7 @@ function codeexcpref($data) {
     return $data;
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['quote'])) {
-    $quote = codeexcpref($_GET["quote"]);
-}
+$quote = codeexcpref($_GET["quote"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['quote'])) {
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:type" content="wangsaf.PNG" />
     <meta property="og:image" content="wangsaf.PNG" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
     <title><?= $spr ?></title>
 </head>
 <body>
