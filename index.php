@@ -2,7 +2,8 @@
 $quote = "";
 $spr = "Quotes Hari Ini";
 
-function codeexcpref($data) {
+function codeexcpref($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -20,6 +21,7 @@ if (isset($_GET['quote'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +29,24 @@ if (isset($_GET['quote'])) {
     <meta property="og:type" content="product" />
     <meta property="og:description" content="Quotes Hari Ini" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image" content="http://gpnode6.mhsshopid.my.id:19135/wangsaf.PNG" />
+    <meta property="og:image" content="https://quote.the2challiance.my.id/icon.PNG" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <title><?= $spr ?></title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=4">
+    <link rel="shortcut icon" href="icon.PNG">
 </head>
-<body>
-    <h1><?= $spr ?></h1>
 
-    <h3><?= $quote ?></h3>
-    <img src="wangsaf.PNG" alt="Foto(error)">
+<body>
+	<div class="container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2><?= $spr ?></h2>
+                <h3>"<?= $quote ?>"</h3>
+                <img src="icon.PNG" alt="Foto(error)">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
